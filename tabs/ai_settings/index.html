@@ -1,0 +1,685 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Archivist by Integral Business Intelligence">
+      
+      
+      
+        <link rel="canonical" href="https://integral-business-intelligence.github.io/archivist/tabs/ai_settings/">
+      
+      
+        <link rel="prev" href="../inspect/">
+      
+      
+        <link rel="next" href="../help_and_licensing/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>AI Settings Tab - Archivist Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Archivist Documentation" class="md-header__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Archivist Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI Settings Tab
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../query/" class="md-tabs__link">
+          
+  
+  
+  Usage
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Archivist Documentation" class="md-nav__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Archivist Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Query Tab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pre-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pre-Process Tab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upload Tab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../browse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Browse Tab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inspect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inspect Tab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Settings Tab
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../help_and_licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Help and Licensing Tab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="overview">Overview</h1>
+<p>The AI Settings Tab puts you in control of how Archivist's artificial intelligence operates, allowing you to tailor the system to your specific needs and preferences. This powerful customization center is organized into three intuitive sections, each addressing a different aspect of the AI's behavior.</p>
+<p>Here you can adjust everything from which AI model powers your conversations to how it interprets your questions and what specialized knowledge it brings to your interactions. Whether you're looking for casual assistance or need precise, technical responses, the AI Settings Tab lets you configure Archivist to work exactly the way you want it to.</p>
+<p>These settings directly influence how the AI responds in your chats, making this tab essential for users who want to optimize their experience. From basic model selection to advanced prompting strategies, the three configuration cards in this tab give you comprehensive control over your AI assistant's capabilities and personality.</p>
+<h1 id="details">Details</h1>
+<h2 id="model-selection-and-configuration-options">Model Selection and Configuration Options</h2>
+<h3 id="default-models">Default Models</h3>
+<p>Archivist provides a thoughtfully curated AI experience built around the versatile IBM Granite 3.2 2B model. This lightweight yet powerful model is specifically chosen to run smoothly on standard laptops and computers without requiring specialized GPU hardware, making advanced AI accessible to everyday business users. When you first install Archivist, you'll find two model options available:</p>
+<ol>
+<li>
+<p>IBM Granite 3.2 2B (Standard)</p>
+<ul>
+<li>The default configuration with balanced performance</li>
+<li>Ready for general queries and document-based conversations</li>
+<li>Pre-optimized settings for most business use cases</li>
+</ul>
+</li>
+<li>
+<p>IBM Granite 3.2 2B by Integral Business Intelligence</p>
+<ul>
+<li>The same core model but with the "IBM Granite Advanced Configuration" applied</li>
+<li>Allows you to personalize how the AI interprets requests and formulates responses</li>
+<li>Created automatically when you modify prompt settings</li>
+</ul>
+</li>
+</ol>
+<p>Both of these initial models are protected and cannot be deleted, ensuring you always have a functioning baseline AI experience.</p>
+<h3 id="paid-license-model-features">Paid License Model Features</h3>
+<p>For paid license holders, Archivist unlocks additional model management capabilities:</p>
+<ul>
+<li>Upload compatible models specific to your industry or use case</li>
+<li>Manage your model collection as your needs evolve</li>
+<li>Delete custom models when no longer needed (while core models remain protected)</li>
+</ul>
+<p>This approach gives you both simplicity and flexibility—start working immediately with optimized defaults, then customize as you become more familiar with your specific needs.</p>
+<h2 id="model-registrymanagement">Model Registry/Management</h2>
+<p>⚠️ Important: Model Management Guidelines
+Using AI Models in the Application</p>
+<p>This application uses a secure model registry system to manage AI models. For the best experience and to avoid errors, please follow these guidelines:</p>
+<p>Do Not Manually Modify Model Files</p>
+<ul>
+<li><strong>Do not manually add model files</strong> to the application directories. Models added outside the application interface will not be recognized or function properly.</li>
+<li><strong>Do not manually delete or modify model files</strong> from application directories. This can cause errors and potentially corrupt the application.</li>
+</ul>
+<p>Proper Model Management</p>
+<ul>
+<li><strong>Always use the application interface</strong> to upload new models (requires a premium license).</li>
+<li><strong>Always use the application's delete function</strong> to remove models you no longer need.</li>
+<li>If you encounter an error indicating a model is missing, use the application's repair or refresh function to resolve this issue.</li>
+</ul>
+<p>Why These Guidelines Matter</p>
+<p>Our application uses a secure registration system that keeps track of your installed models. This system ensures:</p>
+<ul>
+<li>Your models remain available after application updates</li>
+<li>Only properly validated models are used</li>
+<li>The integrity of your application installation is maintained</li>
+</ul>
+<p>Bypassing this system by manually manipulating files will lead to errors that may prevent the application from functioning correctly.</p>
+<p>Thank you for helping us maintain a stable and secure environment for your AI workflows.</p>
+<h3 id="model-parameters">Model Parameters</h3>
+<h4 id="context-length">Context Length</h4>
+<p>Adjust the maximum context length (in tokens) that the AI model can process at once. This controls how much information the model can consider when generating responses. A larger context length allows for more comprehensive understanding of complex queries and documents, but requires more system RAM. Adjust this setting based on your computer's capabilities and the complexity of your typical conversations.</p>
+<h4 id="embedding-model-context-length">Embedding Model Context Length</h4>
+<p>This setting determines the maximum size of text chunks that can be processed when embedding documents into your database. If you plan to use large chunk sizes during document upload, ensure this value is set high enough to accommodate them. If the embedding context length is smaller than your chosen chunk size, the upload operation will not complete successfully (which is a good thing, instead of silently truncating information). Balance this against your system's memory constraints for optimal performance.</p>
+<h4 id="temperature">Temperature</h4>
+<p>Control the creativity and variability of the AI's responses with the temperature setting. Lower values (closer to 0) produce more deterministic, focused responses that stick closely to the most probable outputs. Higher values (closer to 1) introduce more randomness, creativity, and exploration in the responses. Professional users typically prefer lower temperatures for factual consistency, while creative applications might benefit from higher settings.</p>
+<h4 id="number-of-rag-chunks">Number of RAG Chunks</h4>
+<p>Specify exactly how many relevant text chunks from your database will be provided to the AI model during RAG conversations. This important setting balances comprehensiveness against focus: higher numbers give the AI more potential information to work with but may introduce noise, while lower numbers keep responses tightly focused on the most relevant information. Archivist selects the most semantically similar chunks to your query, up to this specified limit.</p>
+<h4 id="citations-toggle">Citations Toggle</h4>
+<p>When enabled, this feature adds transparent source references to AI responses in RAG mode, showing exactly which files and chunk numbers contributed to each answer. Citations appear at the end of the response, allowing you to verify information against your original documents. This powerful [[Transparency]] feature is especially valuable in professional contexts where accountability and fact-checking are important, giving you confidence in the AI's responses by making its information sources explicit.</p>
+<h2 id="prompt-configuration">Prompt Configuration</h2>
+<p>The Prompt Configuration card gives you precise control over how the AI interprets your requests and formulates its responses. At its center is a customizable text area where you can craft your system prompt—the foundational instructions that shape the AI's understanding of its role and responsibilities.</p>
+<h3 id="system-prompt">System Prompt</h3>
+<p>This primary text field is where you define the AI's personality, knowledge focus, response style, and operational parameters. A well-crafted system prompt can dramatically improve the relevance and quality of your AI interactions. For example, you might instruct the AI to focus on academic writing, to prioritize brevity, or to emphasize practical business applications in its responses.</p>
+<h3 id="special-token-controls">Special Token Controls</h3>
+<p>For advanced users and specialized models, Archivist provides four optional input fields that allow you to insert specific tokens at critical positions in the conversation flow:</p>
+<ul>
+<li>Before System Prompt: Special tokens that signal the beginning of system instructions</li>
+<li>After System Prompt: Tokens that mark the transition from system instructions to conversation</li>
+<li>Before User Message: Tokens that indicate when a user input begins</li>
+<li>After User Message: Tokens that signal the end of user input</li>
+</ul>
+<p>These token fields accommodate the technical requirements of various AI models, which may use specific markers to properly interpret different parts of the conversation. While not needed for most standard interactions, these options ensure compatibility with specialized models that require particular formatting.</p>
+<h3 id="scope-of-application">Scope of Application</h3>
+<p>The system prompt and special tokens configured here apply to all models in your Archivist installation, with one exception: the "IBM Granite 3.2 2B by Integral Business Intelligence" model. That model instead uses the specialized configuration from the IBM Granite Advanced Configuration card, giving you two separate prompt frameworks to work with.</p>
+<p>This flexibility allows you to maintain a general prompt setup for most models while taking advantage of Granite's unique capabilities through its dedicated advanced configuration.</p>
+<h2 id="ibm-granite-advanced-configuration">IBM Granite Advanced Configuration</h2>
+<p>What makes IBM Granite particularly valuable is its ability to operate in different specialized modes—capabilities that typically require complex prompt engineering to access. Archivist makes these advanced features available through simple button selections:</p>
+<p>Operation Modes:
+- Standard Chat Mode: General conversation and information
+- RAG Mode: Focused on retrieving and using information from your documents
+- Reasoning Mode: Enhanced critical thinking for complex questions</p>
+<p>Response Length Controls:
+- Normal: Balanced information density
+- Short: Concise, to-the-point answers
+- Long: Comprehensive, detailed explanations</p>
+<p>RAG Response Styles (when in RAG Mode):
+- Default: Balanced approach to using your documents
+- Extractive: Near-direct quotes from your source materials
+- Abstractive: Paraphrased summaries that capture key concepts</p>
+<p>After selecting your preferred configuration, clicking "Save Granite Configuration" applies these settings to the "IBM Granite 3.2 2B by Integral Business Intelligence" option in your model selection dropdown.</p>
+<h1 id="see-also">See Also</h1>
+<hr />
+<p>[[IBM]]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
