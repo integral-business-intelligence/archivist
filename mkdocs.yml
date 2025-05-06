@@ -3,7 +3,7 @@ site_description: Documentation for Archivist by Integral Business Intelligence
 site_url: https://integral-business-intelligence.github.io/archivist/
 
 theme:
-  name: readthedocs
+  name: material
   palette:
     primary: indigo
     accent: indigo
