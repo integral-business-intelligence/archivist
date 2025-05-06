@@ -11,7 +11,6 @@ theme:
     - content.code.copy
   palette:
     primary: grey
-    accent: lime
 
 markdown_extensions:
   - pymdownx.highlight
@@ -21,8 +20,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-    - Usage: tabs/query.md
-    - Concepts: concepts/rag.md
   - Usage:
     - Query Tab: tabs/query.md
     - Pre-Process Tab: tabs/pre-process.md
@@ -33,6 +30,10 @@ nav:
     - Help and Licensing Tab: tabs/help_and_licensing.md
   - Concepts:
     - Retrieval Augmented Generation: concepts/rag.md
+    - Use Cases: concepts/usecases.md
     - File Sets: concepts/filesets.md
     - Privacy: concepts/privacy.md
     - Data Portability: concepts/portability.md
+  - About:
+    - Integral Business Intelligence: about/integralbi.md
+    - Capability Demo: about/demo.md
