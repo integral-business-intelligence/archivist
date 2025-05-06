@@ -5,13 +5,12 @@ This application serves as a **capability demonstration** rather than a finished
 We've made deliberate packaging decisions that prioritize demonstrability over startup speed. The application wraps what would typically be an always-on network service into a distributable format you can try on your own hardware. There is an inherent speed tradeoff with this approach.
 
 [Query Tab](tabs/query.md)
-
-[[Pre-Process Tab]]
-[[Upload Tab]]
-[[Browse Tab]]
-[[Inspect Tab]]
-[[AI Settings Tab]]
-[[Help and Licensing Tab]]
+[Pre-Process Tab](tabs/pre-process.md)
+[Upload Tab](tabs/upload.md)
+[Browse Tab](tabs/browse.md)
+[Inspect Tab](tabs/inspect.md)
+[AI Settings Tab](tabs/ai_settings.md)
+[Help and Licensing Tab](tabs/help_and_licensing.md)
 
 # Value Proposition
 
