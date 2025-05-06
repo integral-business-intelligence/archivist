@@ -1,0 +1,28 @@
+site_name: Archivist Documentation
+site_description: Documentation for Archivist by Integral Business Intelligence
+site_url: https://integral-business-intelligence.github.io/archivist/
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
+  - tables
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Components:
+    - Retriever: components/retriever.md
+    - Generator: components/generator.md
+  - Examples: examples.md
