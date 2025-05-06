@@ -27,5 +27,5 @@ nav:
     - AI Settings Tab: tabs/ai_settings.md
     - Help and Licensing Tab: tabs/help_and_licensing.md
   - Concepts:
-    - Retrieval Augmented Generation: /concepts/rag.md
-    - File Sets: /concepts/filesets.md
+    - Retrieval Augmented Generation: concepts/rag.md
+    - File Sets: concepts/filesets.md
