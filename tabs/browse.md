@@ -32,6 +32,9 @@ Sometimes files may appear in your documents folder without properly associated 
 
 When you need to remove a document from your knowledge base, select it in the data frame and click this button. Archivist thoroughly cleans up by removing both the original source document from your docs folder and all associated text chunks from the database. This complete removal ensures no fragments remain to potentially appear in future AI responses, giving you full control over exactly what information remains in your personal knowledge base.
 
+!!! warning
+    This is a warning admonition.
+
 # Warning: Editing Source Documents Does Not Update Your Database
 
 Be aware that if you edit the source documents in your docs folder, these changes will not automatically appear in your database or affect your AI query results. This is a deliberate architectural design decision in Archivist.
