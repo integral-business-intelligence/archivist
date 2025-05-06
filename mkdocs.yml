@@ -1,4 +1,4 @@
-site_name: Archivist Documentation
+_site_name: Archivist Documentation
 site_description: Documentation for Archivist by Integral Business Intelligence
 site_url: https://integral-business-intelligence.github.io/archivist/
 
@@ -24,9 +24,9 @@ nav:
   - Usage:
     - Query Tab: tabs/query.md
     - Pre-Process Tab: tabs/pre-process.md
-    - Upload Tab: tabs/pre-process.md
-    - Browse Tab: tabs/pre-process.md
-    - Inspect Tab: tabs/pre-process.md
-    - AI Settings Tab: tabs/pre-process.md
-    - Help and Licensing Tab: tabs/pre-process.md
+    - Upload Tab: tabs/upload.md
+    - Browse Tab: tabs/browse.md
+    - Inspect Tab: tabs/inspect.md
+    - AI Settings Tab: tabs/ai_settings.md
+    - Help and Licensing Tab: tabs/help_and_licensing.md
   - Examples: examples.md
