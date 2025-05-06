@@ -4,7 +4,8 @@ This application serves as a **capability demonstration** rather than a finished
 
 We've made deliberate packaging decisions that prioritize demonstrability over startup speed. The application wraps what would typically be an always-on network service into a distributable format you can try on your own hardware. There is an inherent speed tradeoff with this approach.
 
-[[Query Tab]]
+[Query Tab](tabs/query.md)
+
 [[Pre-Process Tab]]
 [[Upload Tab]]
 [[Browse Tab]]
