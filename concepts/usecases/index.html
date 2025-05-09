@@ -1,0 +1,1995 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Archivist by Integral Business Intelligence">
+      
+      
+      
+        <link rel="canonical" href="https://integral-business-intelligence.github.io/archivist/concepts/usecases/">
+      
+      
+        <link rel="prev" href="../rag/">
+      
+      
+        <link rel="next" href="../filesets/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Use Cases - Archivist Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ideal-for-specific-use-cases" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Archivist Documentation" class="md-header__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Archivist Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Use Cases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tabs/query/" class="md-tabs__link">
+          
+  
+  
+  Usage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../rag/" class="md-tabs__link">
+          
+  
+  
+  Concepts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/integralbi/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Archivist Documentation" class="md-nav__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Archivist Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Licensing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/query/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Query
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/pre-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pre-Process
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/upload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Upload
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/browse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Browse
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/inspect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inspect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/ai_settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Settings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tabs/help_and_licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Help and Licensing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Concepts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Concepts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RAG
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ideal-for-specific-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ideal for Specific Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legal-professionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legal Professionals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-project-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Project Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#education-and-academic-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Education and Academic Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-medical-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Medical Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#career-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Career Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-creation-and-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Creation and Writing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#family-history-preservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Family History Preservation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-estate-portfolio-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Estate Portfolio Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#small-business-knowledge-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Small Business Knowledge Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-documentation-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Documentation Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-finance-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Finance Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-profit-grant-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Profit Grant Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#digital-humanities-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Humanities Research
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-knowledge-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Knowledge Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compliance-and-regulatory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance and Regulatory Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product-development-archives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product Development Archives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#litigation-support-and-case-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Litigation Support and Case Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-learning-and-translation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Learning and Translation Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home-renovation-and-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Renovation and Maintenance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immigration-case-self-advocacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immigration Case Self-Advocacy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#federal-litigation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Federal Litigation Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corporate-board-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corporate Board Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chronic-illness-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chronic Illness Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-administration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Academic Administration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#independent-journalists-and-investigators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Independent Journalists and Investigators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diplomatic-and-international-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diplomatic and International Relations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#political-campaign-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Political Campaign Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patent-development-and-ip-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patent Development and IP Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoir-and-autobiography-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memoir and Autobiography Writing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-organizing-and-advocacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Organizing and Advocacy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mergers-and-acquisitions-due-diligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mergers and Acquisitions Due Diligence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#religious-leadership-and-spiritual-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Religious Leadership and Spiritual Guidance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historical-preservation-and-archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historical Preservation and Archiving
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artistic-portfolio-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artistic Portfolio Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-development-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Development Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabletop-rpg-campaign-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabletop RPG Campaign Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibles-and-memorabilia-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collectibles and Memorabilia Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-education-advocacy-and-iep-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Education Advocacy and IEP Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pediatric-medical-history-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pediatric Medical History Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hobby-research-and-skill-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hobby Research and Skill Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competitive-gaming-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competitive Gaming Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosplay-and-prop-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosplay and Prop Creation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-donor-relationship-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Donor Relationship Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-advocacy-coalition-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidential Advocacy Coalition Building
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-community-outreach-coordination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected Community Outreach Coordination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-legislative-advocacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidential Legislative Advocacy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-volunteer-and-activist-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Volunteer and Activist Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-foundation-strategy-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private Foundation Strategy Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filesets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File Sets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Privacy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../portability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Portability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/integralbi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integral BI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Demo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ideal-for-specific-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ideal for Specific Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legal-professionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legal Professionals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-project-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Project Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#education-and-academic-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Education and Academic Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#research-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-medical-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Medical Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#career-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Career Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-creation-and-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Creation and Writing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#family-history-preservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Family History Preservation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-estate-portfolio-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Estate Portfolio Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#small-business-knowledge-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Small Business Knowledge Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-documentation-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Documentation Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-finance-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Finance Organization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-profit-grant-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-Profit Grant Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#digital-humanities-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Humanities Research
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-knowledge-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Knowledge Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compliance-and-regulatory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance and Regulatory Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#product-development-archives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product Development Archives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#litigation-support-and-case-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Litigation Support and Case Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-learning-and-translation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Language Learning and Translation Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home-renovation-and-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Renovation and Maintenance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#immigration-case-self-advocacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immigration Case Self-Advocacy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#federal-litigation-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Federal Litigation Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corporate-board-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corporate Board Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chronic-illness-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chronic Illness Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#academic-administration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Academic Administration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#independent-journalists-and-investigators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Independent Journalists and Investigators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diplomatic-and-international-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diplomatic and International Relations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#political-campaign-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Political Campaign Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patent-development-and-ip-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patent Development and IP Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoir-and-autobiography-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memoir and Autobiography Writing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-organizing-and-advocacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Organizing and Advocacy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mergers-and-acquisitions-due-diligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mergers and Acquisitions Due Diligence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#religious-leadership-and-spiritual-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Religious Leadership and Spiritual Guidance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historical-preservation-and-archiving" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historical Preservation and Archiving
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#artistic-portfolio-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Artistic Portfolio Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-development-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Development Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabletop-rpg-campaign-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabletop RPG Campaign Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibles-and-memorabilia-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collectibles and Memorabilia Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-education-advocacy-and-iep-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Education Advocacy and IEP Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pediatric-medical-history-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pediatric Medical History Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hobby-research-and-skill-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hobby Research and Skill Development
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#competitive-gaming-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competitive Gaming Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosplay-and-prop-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosplay and Prop Creation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-donor-relationship-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Donor Relationship Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-advocacy-coalition-building" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidential Advocacy Coalition Building
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#protected-community-outreach-coordination" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protected Community Outreach Coordination
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confidential-legislative-advocacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidential Legislative Advocacy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-volunteer-and-activist-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Volunteer and Activist Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-foundation-strategy-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private Foundation Strategy Development
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Use Cases</h1>
+
+<h3 id="ideal-for-specific-use-cases">Ideal for Specific Use Cases</h3>
+<p>This batteries-included, locally-running approach makes Integral Archivist particularly well-suited for:</p>
+<h3 id="legal-professionals">Legal Professionals</h3>
+<p>Legal professionals can transform their case management with Archivist by securely uploading confidential client documents, court filings, and legal research into private, case-specific File Sets. Rather than manually searching through hundreds of pages of precedents, contracts, or depositions, attorneys can quickly query relevant case documents for specific clauses, facts, or legal arguments. The strictly local processing ensures all sensitive client information remains protected by attorney-client privilege, with no data ever sent to external servers. For complex litigation involving thousands of documents, Archivist provides an invaluable way to quickly surface relevant information during trial preparation, client meetings, or while developing legal strategies—all while maintaining the strict confidentiality requirements of legal practice.</p>
+<h3 id="business-project-management">Business Project Management</h3>
+<p>Business professionals can streamline project management by organizing documents into project-specific File Sets that bring together proposals, specifications, meeting notes, client communications, and deliverables. When questions arise about project requirements or previous decisions, instead of digging through email threads or shared drives, team members can directly query the relevant Project File Set for immediate answers. This creates an institutional memory that preserves context even as team members change, ensuring continuity of knowledge across project phases. The ability to maintain separate File Sets for different clients or initiatives also helps maintain appropriate information boundaries for sensitive business operations, while the "All Docs" option enables broader organizational insights when needed.</p>
+<h3 id="education-and-academic-use">Education and Academic Use</h3>
+<p>Students and educators can leverage Archivist as an affordable learning companion by organizing course materials, lecture notes, textbook excerpts, and research papers into subject-specific File Sets. Students can upload their class materials and ask clarifying questions about complex topics, request simplified explanations, or find connections between concepts across different courses. For educators, Archivist offers a way to quickly generate personalized learning resources by querying their teaching materials for specific student needs, or to prepare for lectures by surfacing relevant information from previous course iterations. With local processing eliminating subscription costs typically associated with AI tutoring tools, Archivist provides an economical solution for educational support that respects student privacy.</p>
+<h3 id="research-organization">Research Organization</h3>
+<p>Researchers can accelerate their work by creating specialized File Sets for different aspects of their investigations—literature reviews, experimental data, conference proceedings, and their own publications. When developing new theories or writing papers, researchers can query specific research areas to find connections between studies, identify gaps in current knowledge, or generate summaries of existing findings. This approach is particularly valuable for interdisciplinary research, where Archivist can help identify unexpected connections across traditionally separate fields. The privacy-focused design means that unpublished research, preliminary findings, and proprietary data remain completely secure, allowing researchers to explore confidential or sensitive topics without concerns about intellectual property leakage.</p>
+<h3 id="personal-medical-management">Personal Medical Management</h3>
+<p>Individuals managing complex health conditions can use Archivist to make sense of their personal medical journey by uploading and organizing medical records, test results, treatment plans, and research into condition-specific File Sets. When preparing for doctor appointments or making treatment decisions, users can query their own medical history for relevant details, track symptom patterns over time, or generate summaries of their healthcare journey to share with new specialists. The strictly local processing ensures this highly sensitive information never leaves their personal device, providing peace of mind about medical privacy that cloud-based alternatives cannot match. By creating a searchable repository of their complete medical history, users can become more informed advocates for their own healthcare.</p>
+<h3 id="career-development">Career Development</h3>
+<p>Professionals can transform career management by creating File Sets containing performance reviews, project accomplishments, skills certifications, and job descriptions. When pursuing new opportunities, they can query specific File Sets to quickly generate tailored resumes highlighting relevant experiences for particular positions, prepare for interviews by surfacing talking points about past achievements, or identify skill gaps for future development. By maintaining a comprehensive record of career accomplishments, Archivist helps professionals track their growth over time and articulate their value proposition to employers more effectively. The ability to quickly synthesize career materials customized for specific opportunities gives job seekers a competitive advantage in quickly responding to openings with highly relevant application materials.</p>
+<h3 id="content-creation-and-writing">Content Creation and Writing</h3>
+<p>Authors, bloggers, and content creators can organize research materials, notes, outlines, and reference sources into topic-focused File Sets. When developing new content, they can query these collections to find supporting evidence, check facts from previous research, or generate summaries of complex topics to incorporate into their work. For long-form projects like books or extensive blog series, Archivist helps maintain consistency by allowing writers to check how they've previously explained concepts or described characters. The local processing ensures that unpublished creative work and original ideas remain private until ready for publication, while the ability to export conversations provides a convenient way to capture draft content generated during the ideation process.</p>
+<h3 id="family-history-preservation">Family History Preservation</h3>
+<p>Family historians can create an interactive archive of their heritage by uploading scanned letters, transcribed interviews, genealogical records, and family photos (with descriptions) into generational or branch-specific File Sets. When planning family reunions or helping younger generations connect with their roots, they can ask questions about specific ancestors, historical family events, or traditions preserved in these documents. The locally-processed nature of Archivist ensures that intimate family stories and potentially sensitive historical information stays private within the family. This digital preservation method transforms static family documents into a dynamic, queryable family knowledge base that can help maintain cultural connections across generations and geographical distances.</p>
+<h3 id="real-estate-portfolio-management">Real Estate Portfolio Management</h3>
+<p>Real estate investors and property managers can organize property documentation into location-specific File Sets containing purchase agreements, inspection reports, maintenance records, tenant communications, and zoning regulations. When making investment decisions or addressing property issues, they can quickly query relevant information about property history, maintenance patterns, or contractual obligations. For investors managing multiple properties across different locations, Archivist provides a centralized way to maintain comprehensive records while being able to focus queries on specific properties or geographic regions as needed. The ability to combine financial and operational information in contextual conversations helps identify patterns and opportunities that might otherwise be missed in traditional file storage systems.</p>
+<h3 id="small-business-knowledge-management">Small Business Knowledge Management</h3>
+<p>Small business owners can transform their operational knowledge by creating File Sets for different business functions—customer relationships, vendor contracts, employee training, and financial reports. When training new staff or making business decisions, owners can query specific aspects of their operations for historical context, procedural details, or performance patterns. This provides an affordable way for small businesses to implement knowledge management practices typically available only to larger corporations with specialized systems. By preserving institutional knowledge in a queryable format, Archivist helps protect small businesses from disruption during staff transitions and enables more consistent customer experiences through better information access.</p>
+<h3 id="technical-documentation-management">Technical Documentation Management</h3>
+<p>IT professionals and system administrators can organize technical documentation, configuration files, troubleshooting guides, and network diagrams into system-specific File Sets. When addressing technical issues or planning system changes, they can quickly query relevant documentation for specific commands, configuration details, or past solutions to similar problems. This proves especially valuable in complex technical environments where documentation is often fragmented across multiple platforms and formats. By creating a unified, searchable repository of technical information, Archivist helps reduce system downtime and ensures that critical technical knowledge remains accessible even when key personnel are unavailable.</p>
+<h3 id="personal-finance-organization">Personal Finance Organization</h3>
+<p>Individuals can take control of their financial planning by organizing tax returns, investment statements, insurance policies, and financial advice into purpose-specific File Sets. When making major financial decisions or preparing tax filings, they can query their personal financial history for relevant information, track spending patterns, or generate summaries of their investment performance. The strictly local processing ensures that sensitive financial information remains secure while still being useful for financial planning. By maintaining a comprehensive, searchable record of their financial journey, users can make more informed decisions and more easily identify opportunities for optimization in their personal finances.</p>
+<h3 id="non-profit-grant-management">Non-Profit Grant Management</h3>
+<p>Non-profit organizations can streamline grant management by creating File Sets for each funding source containing proposal documents, reporting requirements, program outcomes, and funder communications. When preparing new grant applications or compliance reports, staff can quickly query specific funder expectations, review previously successful language, or track program commitments across multiple funding sources. This approach is particularly valuable for smaller organizations with limited administrative staff who need to maximize efficiency in managing complex funding relationships. By preserving institutional knowledge about funder relationships, Archivist helps ensure consistency in communications and compliance even through staff transitions.</p>
+<h3 id="digital-humanities-research">Digital Humanities Research</h3>
+<p>Humanities scholars can revolutionize their research by organizing primary sources, historical texts, correspondence, and scholarly analyses into period or theme-specific File Sets. When developing new interpretations or writing papers, they can query these collections to find connections between historical events, track the evolution of ideas across texts, or generate summaries of scholarly perspectives on specific topics. This approach is particularly valuable for working with historical texts that might use archaic language or require contextual understanding. By creating a personal research environment where rare or difficult texts become queryable and interconnected, Archivist helps scholars discover new insights within their source materials while maintaining complete privacy for preliminary research findings.</p>
+<h3 id="personal-knowledge-management">Personal Knowledge Management</h3>
+<p>Knowledge workers can build their personal "second brain" by uploading notes, articles, books, and learning resources into concept-specific File Sets. When developing ideas or solving problems, they can have conversations about specific topics that draw from their curated knowledge base, helping them make connections between seemingly unrelated concepts or retrieve information they've previously encountered but partially forgotten. Unlike public AI tools, Archivist's responses are informed by their personally valuable sources rather than generic internet content. This creates a truly personalized thinking assistant that reflects the user's unique information landscape and intellectual journey, helping them leverage their accumulated knowledge more effectively.</p>
+<h3 id="compliance-and-regulatory-management">Compliance and Regulatory Management</h3>
+<p>Regulatory professionals can organize constantly evolving policies, standards, audit reports, and compliance documentation into regulation-specific File Sets. When preparing for audits or implementing new requirements, they can quickly query relevant regulatory frameworks, identify applicable standards for specific situations, or generate summaries of compliance history. For industries with complex regulatory environments, Archivist provides a way to make sense of overlapping requirements while ensuring sensitive compliance information remains secure. By maintaining an up-to-date, queryable repository of regulatory knowledge, organizations can reduce compliance risks and respond more efficiently to regulatory changes.</p>
+<h3 id="product-development-archives">Product Development Archives</h3>
+<p>Product teams can preserve institutional knowledge by organizing design documents, customer feedback, engineering specifications, and market research into product-specific File Sets. When planning feature enhancements or troubleshooting issues, teams can query the product's historical development context, understand past design decisions, or review previous customer reactions to similar features. This approach is particularly valuable for long-lifecycle products where current team members may not have been involved in original development decisions. By creating a comprehensive, queryable product memory, Archivist helps teams maintain design consistency and avoid repeating previously identified mistakes.</p>
+<h3 id="litigation-support-and-case-preparation">Litigation Support and Case Preparation</h3>
+<p>Trial lawyers can enhance case preparation by organizing discovery documents, deposition transcripts, evidence files, and legal research into comprehensive case File Sets. During intense pre-trial periods, attorneys can quickly find specific testimony details, identify contradictions in witness statements, or generate summaries of complex evidence. This local, private approach to document analysis provides many benefits of expensive legal technology platforms at a fraction of the cost, while keeping sensitive case information completely secure. By enabling rapid information retrieval across massive document collections, Archivist helps legal teams develop stronger case strategies and respond more effectively to unexpected developments during litigation.</p>
+<h3 id="language-learning-and-translation-support">Language Learning and Translation Support</h3>
+<p>Language learners and translators can create personalized linguistic resources by organizing vocabulary lists, grammar notes, practice conversations, and authentic texts into language-specific File Sets. When working on translations or practicing a language, they can query idioms, contextual usage examples, or generate explanations of grammar concepts based on their own notes and materials. For specialized translators working with domain-specific terminology, Archivist provides a way to maintain and query personal term databases alongside reference texts. By creating a queryable repository of their language learning journey, users develop a personalized language assistant that grows with their proficiency.</p>
+<h3 id="home-renovation-and-maintenance">Home Renovation and Maintenance</h3>
+<p>Homeowners can streamline property management by organizing warranty documents, contractor quotes, project plans, and maintenance schedules into project or room-specific File Sets. When planning new renovations or addressing maintenance issues, they can quickly query relevant property history, retrieve specific product details, or generate summaries of previous work completed. This approach creates a comprehensive home record that preserves critical information often lost in physical paperwork or scattered digital files. By maintaining a queryable history of their home, owners can make more informed decisions about improvements and maintain better continuity in property care over years of ownership.</p>
+<h3 id="immigration-case-self-advocacy">Immigration Case Self-Advocacy</h3>
+<p>Individuals navigating the immigration process can create a comprehensive record by organizing their personal documentation, application materials, official correspondence, country condition reports, and legal research into case-specific File Sets. When preparing for interviews, responding to requests for evidence, or communicating with attorneys, they can query their file collection to recall specific timeline details, ensure narrative consistency across documents, or generate summaries of their case history. This becomes particularly valuable for complex cases spanning many years or involving multiple application types. By maintaining a searchable repository of their complete immigration journey, applicants can become more effective self-advocates, minimize costly attorney time by coming better prepared to meetings, and ensure no critical details are overlooked during the often lengthy and document-intensive immigration process.</p>
+<h3 id="federal-litigation-support">Federal Litigation Support</h3>
+<p>Individuals involved in federal cases (whether as plaintiffs, defendants, or witnesses) can organize the voluminous documentation typical of federal proceedings into chronological or issue-specific File Sets. These might include court filings, federal regulations, precedent cases, evidence documentation, and procedural requirements. When meeting with attorneys or preparing for court appearances, they can quickly retrieve specific regulatory details, generate case timeline summaries, or find exact language from previous filings. The strictly local processing ensures sensitive case information remains protected by appropriate privileges. This approach helps non-lawyers navigate the exceptionally complex federal court system more effectively, reduces billable hours spent on basic case familiarization with counsel, and enables more productive collaboration with legal teams through better-informed participation.</p>
+<h3 id="corporate-board-documentation">Corporate Board Documentation</h3>
+<p>Corporate board members can maintain comprehensive governance records by organizing meeting minutes, shareholder communications, financial reports, and governance policies into chronological or committee-specific File Sets. When preparing for board meetings or making governance decisions, they can quickly query historical precedents, track the evolution of specific issues across meetings, or generate summaries of previous board actions on related matters. This approach is particularly valuable for satisfying the documentation requirements of corporate governance while making the extensive record actually useful for decision-making. By creating a searchable, private repository of board activities, organizations strengthen their governance practices while maintaining appropriate confidentiality around sensitive corporate decisions.</p>
+<h3 id="chronic-illness-management">Chronic Illness Management</h3>
+<p>Patients managing complex or rare health conditions can create a comprehensive medical history by organizing specialist reports, treatment records, research literature, medication histories, and symptom journals into condition-specific File Sets. When preparing for medical appointments or considering treatment changes, they can query their health history for patterns, generate summaries of previous treatment responses, or prepare focused questions based on specific medical literature. For conditions requiring coordination across multiple specialists, Archivist helps patients maintain a complete picture of their health journey often missing from fragmented healthcare systems. By developing a queryable personal health record, patients become more effective advocates for their care while maintaining complete privacy around sensitive health information.</p>
+<h3 id="academic-administration">Academic Administration</h3>
+<p>Department chairs and academic administrators can preserve institutional knowledge by organizing curriculum documents, faculty evaluations, student outcome data, and accreditation materials into program-specific File Sets. When preparing for program reviews or planning curriculum changes, they can quickly query historical program development, track assessment patterns over time, or generate summaries of previous accreditation feedback. This approach helps maintain program quality and consistency through leadership transitions common in academic settings. By creating a comprehensive, searchable program history, administrators make more informed decisions while reducing the substantial workload associated with periodic academic review processes.</p>
+<h3 id="independent-journalists-and-investigators">Independent Journalists and Investigators</h3>
+<p>Investigative journalists can organize interview transcripts, public records, background research, and source materials into story-specific File Sets. When developing articles or verifying information, they can query specific details, identify connections between seemingly unrelated facts, or generate summaries of complex background information. The strictly local processing ensures source confidentiality and protects sensitive investigative work from potential surveillance or discovery. For freelance journalists without institutional support, Archivist provides many benefits of expensive newsroom systems at an accessible price point. By maintaining a secure, searchable archive of investigative materials, journalists develop more comprehensive reporting while better protecting their sources and work product.</p>
+<h3 id="diplomatic-and-international-relations">Diplomatic and International Relations</h3>
+<p>Diplomats and international relations professionals can organize diplomatic communications, treaty texts, meeting notes, and cultural briefings into country or issue-specific File Sets. When preparing for negotiations or developing policy positions, they can quickly query historical precedents, retrieve specific agreement language, or generate summaries of previous diplomatic engagements on similar issues. For professionals working across multiple countries or complex multilateral relationships, Archivist helps maintain continuity of approach while adapting to specific cultural and political contexts. By creating a comprehensive, private repository of diplomatic knowledge, professionals develop more nuanced international strategies while maintaining appropriate confidentiality around sensitive diplomatic communications.</p>
+<h3 id="political-campaign-management">Political Campaign Management</h3>
+<p>Campaign strategists can organize polling data, voter feedback, policy research, opposition analysis, and messaging documents into issue-specific File Sets. When developing campaign communications or preparing candidates for debates, they can quickly query relevant policy details, retrieve specific voter concerns from different regions, or generate summaries of position evolutions on complex topics. The strictly local processing ensures sensitive campaign strategy remains secure from potential data breaches. For campaigns with limited staff but complex information needs, Archivist provides an affordable way to maintain message discipline and policy coherence across multiple campaign events and communications channels. By developing a comprehensive, searchable campaign knowledge base, teams can respond more effectively to rapidly changing political landscapes.</p>
+<h3 id="patent-development-and-ip-management">Patent Development and IP Management</h3>
+<p>Inventors and IP professionals can organize invention disclosures, prior art searches, patent applications, and examiner communications into technology-specific File Sets. When responding to office actions or developing new patent applications, they can quickly query relevant technical details, identify potential conflicts with prior applications, or generate summaries of previous examiner objections on similar technologies. For organizations developing complex patent portfolios, Archivist helps maintain consistent technical language and clear boundaries between related inventions. By creating a secure, searchable repository of their intellectual property development process, innovators strengthen their patent strategies while maintaining appropriate confidentiality around valuable IP assets.</p>
+<h3 id="memoir-and-autobiography-writing">Memoir and Autobiography Writing</h3>
+<p>Writers documenting their life experiences can organize personal journals, correspondence, photographs (with descriptions), and timeline notes into period-specific File Sets. When developing their narrative, they can query specific events, retrieve contextual details from particular time periods, or generate summaries of themes that emerge across different life chapters. This approach helps transform scattered personal records into a coherent life story with rich, accurate details. The strictly local processing ensures intimate personal reflections remain private until intentionally incorporated into published work. By creating a searchable personal archive, memoir writers develop more nuanced narratives while preserving the authentic voice of their past experiences.</p>
+<h3 id="community-organizing-and-advocacy">Community Organizing and Advocacy</h3>
+<p>Grassroots organizers can maintain institutional memory by organizing meeting notes, constituent feedback, policy proposals, and campaign results into issue-specific File Sets. When planning new initiatives or educating new volunteers, they can quickly query historical strategies, track the evolution of community priorities, or generate summaries of previous campaign outcomes on similar issues. For organizations with high volunteer turnover, Archivist helps preserve valuable organizing knowledge that might otherwise be lost during transitions. By developing a comprehensive, searchable advocacy history, movements build more effective campaigns while maintaining appropriate privacy around sensitive organizing strategies.</p>
+<h3 id="mergers-and-acquisitions-due-diligence">Mergers and Acquisitions Due Diligence</h3>
+<p>Financial analysts can organize target company financials, market research, regulatory filings, and valuation models into acquisition-specific File Sets. During the intensive due diligence process, they can quickly query specific financial details, identify potential regulatory concerns, or generate summaries of valuation approaches for similar past acquisitions. The strictly local processing provides enhanced security for highly sensitive transaction information. For deal teams working under tight timeframes with massive document collections, Archivist helps surface critical information that might otherwise be overlooked in traditional review processes. By creating a comprehensive, searchable transaction knowledge base, professionals develop more nuanced valuation perspectives while maintaining appropriate confidentiality around market-sensitive information.</p>
+<h3 id="religious-leadership-and-spiritual-guidance">Religious Leadership and Spiritual Guidance</h3>
+<p>Clergy and spiritual leaders can organize theological texts, sermon notes, community history, and pastoral care resources into topic-specific File Sets. When preparing services or providing guidance, they can quickly query relevant scriptural passages, retrieve specific theological interpretations, or generate summaries of previous teachings on complex spiritual questions. For leaders serving diverse communities with varying spiritual needs, Archivist helps maintain consistency in fundamental teachings while adapting to specific pastoral contexts. By developing a comprehensive, searchable theological knowledge base, religious leaders provide more nuanced spiritual guidance while preserving their community's unique interpretive traditions.</p>
+<h3 id="historical-preservation-and-archiving">Historical Preservation and Archiving</h3>
+<p>Local historians and community archivists can organize historical documents, oral histories, newspaper archives, and artifact documentation into era or theme-specific File Sets. When developing exhibits or responding to research requests, they can quickly query specific historical details, identify connections between community events, or generate summaries of primary source perspectives on particular historical developments. For small historical societies with limited resources, Archivist provides an affordable way to make their collections more accessible and useful. By creating a searchable digital companion to physical archives, preservationists enhance community engagement with local history while maintaining appropriate protections for sensitive historical materials.</p>
+<h3 id="artistic-portfolio-development">Artistic Portfolio Development</h3>
+<p>Visual and performing artists can organize artist statements, project documentation, critical reviews, and process notes into project-specific File Sets. When applying for grants or preparing for exhibitions, they can quickly query their artistic evolution, retrieve specific technical details from past projects, or generate summaries of conceptual themes across their body of work. For artists developing complex, multiyear projects, Archivist helps maintain conceptual coherence while documenting creative development. By creating a comprehensive, searchable artistic archive, creators develop more articulate descriptions of their practice while preserving the authentic context of their creative process.</p>
+<h3 id="game-development-documentation">Game Development Documentation</h3>
+<p>Video game developers can organize design documents, player feedback, art assets descriptions, narrative scripts, and technical specifications into feature-specific File Sets. When refining game mechanics or expanding storylines, they can quickly query previous design decisions, track the evolution of character development, or generate summaries of player reactions to similar features. For indie developers without enterprise documentation systems, Archivist provides an affordable way to maintain creative and technical continuity across development cycles. By creating a searchable game development archive, creators make more cohesive design choices while preserving the rationale behind key creative and technical decisions, especially valuable when returning to projects after breaks or when onboarding new team members.</p>
+<h3 id="tabletop-rpg-campaign-management">Tabletop RPG Campaign Management</h3>
+<p>Dungeon Masters and game masters can organize campaign notes, character backgrounds, world-building lore, encounter designs, and session summaries into campaign-specific File Sets. During gameplay, they can quickly query relevant world details, retrieve specific NPC characteristics, or generate summaries of previous story arcs to maintain narrative consistency. For complex campaigns spanning months or years, Archivist helps track intricate storylines and player decisions that shape the evolving game world. By developing a comprehensive, searchable campaign repository, game masters create more immersive experiences while reducing the cognitive load of remembering countless world details and previous player interactions.</p>
+<h3 id="collectibles-and-memorabilia-management">Collectibles and Memorabilia Management</h3>
+<p>Serious collectors can organize acquisition records, authentication documentation, condition reports, market valuations, and provenance research into collection-specific File Sets. When considering new purchases or managing insurance documentation, they can quickly query specific item histories, track value fluctuations, or generate summaries of collection development in particular categories. For collections with hundreds or thousands of items, Archivist transforms static inventory lists into a dynamic knowledge base about each piece's significance and history. By creating a comprehensive, searchable collection archive, hobbyists make more informed acquisition decisions while maintaining detailed documentation that preserves collection value and supports eventual estate planning.</p>
+<h3 id="special-education-advocacy-and-iep-management">Special Education Advocacy and IEP Management</h3>
+<p>Parents of children with special needs can organize evaluation reports, IEP documents, therapy notes, school communications, and intervention research into chronological File Sets. When preparing for IEP meetings or discussing accommodations with educators, they can quickly query specific developmental milestones, track intervention effectiveness over time, or generate summaries of previous educational strategies. For families navigating years of complex educational planning, Archivist helps maintain a continuous record often fragmented across multiple schools, therapists, and specialists. By developing a comprehensive, searchable educational history, parents become more effective advocates while ensuring critical information isn't lost during educational transitions or provider changes.</p>
+<h3 id="pediatric-medical-history-management">Pediatric Medical History Management</h3>
+<p>Parents managing complex pediatric health needs can organize medical records, growth data, medication histories, specialist reports, and treatment plans into condition-specific File Sets. When consulting with new specialists or monitoring developmental patterns, they can quickly query specific health events, track symptom progression, or generate summaries of treatment responses for medical consultations. For children with rare conditions or complex medical needs, Archivist helps parents maintain the comprehensive health picture often missing from fragmented healthcare systems. By creating a searchable medical timeline, families ensure critical health information remains accessible across developmental stages and provider changes, potentially revealing patterns not obvious when records are scattered across multiple systems.</p>
+<h3 id="hobby-research-and-skill-development">Hobby Research and Skill Development</h3>
+<p>Dedicated hobbyists can organize instructional materials, technique guides, project notes, and reference resources into technique-specific File Sets. Whether they're focused on woodworking, gardening, crafting, or other pursuits, when developing new projects they can quickly query specific methodologies, retrieve material specifications, or generate summaries of approaches for particular challenges. For hobbies with extensive specialized knowledge, Archivist transforms scattered reference materials into a personalized knowledge assistant. By creating a searchable repository of their learning journey, hobbyists accelerate skill development while building on their previous experiences rather than constantly starting from scratch with each new project.</p>
+<h3 id="competitive-gaming-strategy">Competitive Gaming Strategy</h3>
+<p>Esports teams and serious competitive gamers can organize match recordings (transcribed), strategy guides, patch notes, and performance analytics into game or map-specific File Sets. When preparing for tournaments or developing new tactics, they can quickly query specific game mechanics, review previous strategic approaches, or generate summaries of performance patterns against particular opponents. For games with complex metas and frequent updates, Archivist helps track evolving strategies and adaptation requirements. By developing a comprehensive, searchable strategy repository, competitive players identify optimization opportunities while maintaining strategic continuity through game evolutions and team roster changes.</p>
+<h3 id="cosplay-and-prop-creation">Cosplay and Prop Creation</h3>
+<p>Costume and prop makers can organize reference images (with descriptions), material specifications, construction techniques, and project timelines into character-specific File Sets. When developing new pieces, they can quickly query specific construction methods, retrieve material sources from previous projects, or generate summaries of successful approaches for similar design challenges. For creators working on multiple complex projects simultaneously, Archivist helps maintain detailed technical knowledge that might otherwise be forgotten between similar projects. By creating a searchable making archive, cosplayers develop more efficient workflows while preserving hard-won knowledge about specific materials and techniques.</p>
+<h3 id="secure-donor-relationship-management">Secure Donor Relationship Management</h3>
+<p>Non-profit development officers can create a privacy-focused donor database by organizing donor communications, giving histories, meeting notes, and personal interests into individual or household-specific File Sets. When preparing for donor meetings or planning cultivation strategies, they can quickly query specific relationship details, recall personal connections, or generate summaries of previous engagement points—all without exposing sensitive donor information to cloud-based CRM systems. For organizations working with donors who require heightened privacy or discretion (such as reproductive rights supporters, political advocacy groups, or community organizations in polarized environments), Archivist provides a secure way to maintain comprehensive donor intelligence while protecting supporter identities from potential data breaches. By creating a locally-processed donor knowledge base, development officers nurture more authentic relationships while providing the enhanced privacy guarantees that sensitive mission-driven organizations require.</p>
+<h3 id="confidential-advocacy-coalition-building">Confidential Advocacy Coalition Building</h3>
+<p>Advocacy organizations can securely document coalition-building efforts by organizing stakeholder positions, strategy discussions, campaign timelines, and political landscapes into issue-specific File Sets. When coordinating multi-organization initiatives or planning advocacy campaigns, leaders can quickly query specific partnership histories, track evolving stakeholder concerns, or generate summaries of effective messaging approaches for particular audiences. For organizations like Planned Parenthood working in politically contested spaces, Archivist ensures that sensitive coalition strategies, supporter networks, and tactical approaches remain completely private. By developing a comprehensive, locally-processed advocacy archive, organizations build more effective coalitions while providing participating partners with the confidentiality assurances necessary for work in challenging political environments.</p>
+<h3 id="protected-community-outreach-coordination">Protected Community Outreach Coordination</h3>
+<p>Community organizers working on sensitive issues can document outreach efforts by organizing event records, community feedback, resource distribution data, and intervention outcomes into neighborhood or program-specific File Sets. When applying for grants or refining service approaches, they can quickly query specific community engagement patterns, track service utilization across different populations, or generate summaries of previous outreach effectiveness—all without exposing vulnerable community members in cloud systems. For organizations serving undocumented individuals, domestic violence survivors, or other populations requiring enhanced privacy protections, Archivist provides a way to document impact while minimizing exposure risks. By creating a secure, locally-processed outreach history, organizations demonstrate program effectiveness to funders while maintaining the strict confidentiality commitments made to vulnerable communities.</p>
+<h3 id="confidential-legislative-advocacy">Confidential Legislative Advocacy</h3>
+<p>Policy advocates can securely organize legislator profiles, voting histories, meeting notes, and position papers into district or issue-specific File Sets. When preparing for legislative meetings or developing advocacy strategies, they can quickly query specific policy positions, retrieve details from previous interactions, or generate summaries of effective persuasion approaches for particular legislators. For organizations advocating on politically sensitive issues like reproductive rights or LGBTQ+ equality, Archivist ensures that internal strategy documents and relationship insights remain completely private. By developing a comprehensive, locally-processed legislative knowledge base, advocacy teams coordinate more effectively across staff changes while protecting sensitive political intelligence from opponents who might seek access to their strategic planning.</p>
+<h3 id="secure-volunteer-and-activist-management">Secure Volunteer and Activist Management</h3>
+<p>Organizations with security-sensitive volunteer networks can safely document activist involvement by organizing volunteer skills, training completion, event participation, and leadership development into role-specific File Sets. When planning direct actions or developing leadership pipelines, coordinators can quickly query specific capability distributions, track activist development trajectories, or generate summaries of previous deployment effectiveness—all without creating centralized activist databases that could become targets for opponents. For organizations engaged in frontline advocacy around reproductive rights, environmental protection, or civil liberties, Archivist provides a way to maintain organizational knowledge while minimizing security risks to individual activists. By creating secure, fragmented volunteer records, organizations build more effective movement capacity while honoring their ethical obligation to protect those who take personal risks for causes they believe in.</p>
+<h3 id="private-foundation-strategy-development">Private Foundation Strategy Development</h3>
+<p>Foundation program officers can confidentially organize grantee reports, impact evaluations, field research, and strategic planning documents into initiative-specific File Sets. When refining funding priorities or evaluating program effectiveness, they can quickly query specific outcome patterns, track field developments across multiple grantees, or generate summaries of lessons learned from previous funding approaches. For foundations working on politically sensitive issues or in challenging regions, Archivist ensures that candid grantee assessments and strategic deliberations remain appropriately confidential. By developing a comprehensive, locally-processed foundation knowledge base, program teams make more informed funding decisions while maintaining the trust relationships essential for honest communication with grantees about challenges and setbacks.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

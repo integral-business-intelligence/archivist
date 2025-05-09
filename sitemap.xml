@@ -2,34 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/license/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/about/demo/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/about/integralbi/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/concepts/filesets/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/concepts/portability/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/concepts/privacy/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/concepts/rag/</loc>
+         <lastmod>2025-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://integral-business-intelligence.github.io/archivist/concepts/usecases/</loc>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/ai_settings/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/browse/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/help_and_licensing/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/inspect/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/pre-process/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/query/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
     <url>
          <loc>https://integral-business-intelligence.github.io/archivist/tabs/upload/</loc>
-         <lastmod>2025-05-06</lastmod>
+         <lastmod>2025-05-09</lastmod>
     </url>
 </urlset>
