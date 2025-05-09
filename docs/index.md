@@ -1,5 +1,8 @@
 Archivist is an easy-to-use application that brings AI chat capabilities to your personal computer without requiring internet access. What makes Archivist special is its ability to learn from your own files and documents. Simply upload any files you want—like PDFs, Word documents, or text files—and Archivist makes their content available during your AI conversations. You can ask questions about specific documents or across your entire collection, getting insightful answers based on your personal information. No technical knowledge required—just upload your files, ask questions, and get smart responses that draw directly from your own curated library of documents.
 
+!!! info "About the Name"
+    An archivist is an information professional who assesses, collects, organizes, preserves, maintains control over, and provides access to records and archives determined to have long-term value... Archivists keep records that have enduring value as reliable memories of the past, and they help people find and understand the information they need in those records. [Source: Wikipedia](https://en.wikipedia.org/wiki/Archivist)
+
 This application serves as a **capability demonstration** rather than a finished product. As system integrators specializing in AI solutions for professional services firms, developing mass-market desktop applications isn't our core business model.
 
 We've made deliberate packaging decisions that prioritize demonstrability over startup speed. The application wraps what would typically be an always-on network service into a distributable format you can try on your own hardware. There is an inherent speed tradeoff with this approach.
