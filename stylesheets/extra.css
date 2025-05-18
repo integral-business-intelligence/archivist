@@ -1,7 +1,15 @@
-.md-content a {
-  color: #4caf50; /* Change this to your preferred color (this is green) */
+/* Regular links */
+.md-content a, .md-nav__link {
+  color: #00897b; /* Teal/green */
 }
 
-.md-nav__link {
-  color: #4caf50; /* Change to match the above color */
+/* Hover state */
+.md-content a:hover, .md-nav__link:hover {
+  color: #4db6ac; /* Lighter teal */
+}
+
+/* Active/current page */
+.md-nav__link--active {
+  color: #00695c !important; /* Darker teal */
+  font-weight: bold;
 }
