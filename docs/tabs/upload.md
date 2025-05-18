@@ -2,6 +2,13 @@
 
 The Upload Tab is where you expand your personal knowledge database by adding documents for Archivist to learn from. This straightforward interface allows you to directly upload files that will be processed, understood, and made available for your AI conversations. There's no need to use the Pre-Processing Tab first—though that option remains available if you want extra control—as Archivist can handle your documents directly from this interface, automatically preparing them for AI interaction and storing them in your private database for immediate use in your queries.
 
+The upload process performs a series of steps:
+
+1. Text splitting
+2. Creation of embedding vectors
+3. Creation of metadata
+4. Storage of vectors and metadata in the vector database
+
 # Text Splitting Methods
 
 ## Fixed Chunk Size Method
@@ -15,6 +22,14 @@ For maximum precision, you can upload a CSV file where each row contains a pre-d
 ## Custom Delimiter Method
 
 This flexible approach lets you upload a text file where you've inserted special character patterns (delimiters) at points where you want the text split into chunks. For example, you might use "###" or "---" between sections of a document. When uploading, you'll specify which delimiter pattern you've used, and Archivist will create chunks precisely at those boundaries. This balance between automation and control is perfect for when you want to split content at logical breakpoints without the manual work of creating a CSV.
+
+# Embedding Process
+
+See [embedding](concepts/embedding.md)
+
+# Metadata
+
+# Vector Database
 
 # Notes
 

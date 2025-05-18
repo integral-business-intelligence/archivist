@@ -1,4 +1,4 @@
-# AI Inference Components
+# Inference Components
 
 ## llama.cpp
 
@@ -10,5 +10,7 @@
 
 Hugging Face Transformers runs using [pytorch](https://github.com/pytorch/pytorch) which is licensed using a [BSD-style License](https://github.com/pytorch/pytorch/blob/main/LICENSE)
 
-# AI Models
+# Models
+
+The embedding model is [nomic-embed-text-v1.5](https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF/tree/main) and is licensed using the Apache-2.0 license.
 
