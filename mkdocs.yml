@@ -11,6 +11,7 @@ theme:
     - content.code.copy
   palette:
     primary: grey
+    accent: light green
 
 markdown_extensions:
   - pymdownx.highlight
