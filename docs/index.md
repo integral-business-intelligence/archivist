@@ -1,3 +1,5 @@
+🚧 We are still building the documentation prior to releasing the app 🚧
+
 Archivist is an easy-to-use desktop application that:
 
 1\. Brings local, offline, AI chat capabilities to your personal computer; and<br>
