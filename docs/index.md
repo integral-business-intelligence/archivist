@@ -1,4 +1,5 @@
-🚧 We are still building the documentation prior to releasing the app 🚧
+!!! warning "Work in Progress"
+    🚧 We are still building the documentation prior to an official release 🚧
 
 Archivist is an easy-to-use desktop application that:
 
