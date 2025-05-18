@@ -10,7 +10,7 @@ theme:
     - search.highlight
     - content.code.copy
   palette:
-    primary: black
+    primary: grey
 
 markdown_extensions:
   - pymdownx.highlight
