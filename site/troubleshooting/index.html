@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://integral-business-intelligence.github.io/archivist/concepts/rag/">
+        <link rel="canonical" href="https://integral-business-intelligence.github.io/archivist/troubleshooting/">
       
       
-        <link rel="prev" href="../../tabs/help_and_licensing/">
+        <link rel="prev" href="../quickstart/">
       
       
-        <link rel="next" href="../usecases/">
+        <link rel="next" href="../license/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>RAG - Archivist Documentation</title>
+        <title>Troubleshooting - Archivist Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#retrieval-augmented-generation-rag" class="md-skip">
+        <a href="#1-startup-is-slow" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Archivist Documentation" class="md-header__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
+    <a href=".." title="Archivist Documentation" class="md-header__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RAG
+              Troubleshooting
             
           </span>
         </div>
@@ -183,11 +183,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
           
   
   
@@ -207,7 +209,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tabs/query/" class="md-tabs__link">
+        <a href="../tabs/query/" class="md-tabs__link">
           
   
   
@@ -223,13 +225,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../concepts/rag/" class="md-tabs__link">
           
   
   
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/integralbi/" class="md-tabs__link">
+        <a href="../about/integralbi/" class="md-tabs__link">
           
   
   
@@ -283,7 +283,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Archivist Documentation" class="md-nav__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
+    <a href=".." title="Archivist Documentation" class="md-nav__button md-logo" aria-label="Archivist Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -298,24 +298,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -328,7 +333,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Home
@@ -342,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -365,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quickstart/" class="md-nav__link">
+      <a href="../quickstart/" class="md-nav__link">
         
   
   
@@ -385,10 +390,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../troubleshooting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -399,6 +413,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -411,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../license/" class="md-nav__link">
+      <a href="../license/" class="md-nav__link">
         
   
   
@@ -482,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/query/" class="md-nav__link">
+      <a href="../tabs/query/" class="md-nav__link">
         
   
   
@@ -505,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/pre-process/" class="md-nav__link">
+      <a href="../tabs/pre-process/" class="md-nav__link">
         
   
   
@@ -528,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/upload/" class="md-nav__link">
+      <a href="../tabs/upload/" class="md-nav__link">
         
   
   
@@ -551,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/browse/" class="md-nav__link">
+      <a href="../tabs/browse/" class="md-nav__link">
         
   
   
@@ -574,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/inspect/" class="md-nav__link">
+      <a href="../tabs/inspect/" class="md-nav__link">
         
   
   
@@ -597,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/ai_settings/" class="md-nav__link">
+      <a href="../tabs/ai_settings/" class="md-nav__link">
         
   
   
@@ -620,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tabs/help_and_licensing/" class="md-nav__link">
+      <a href="../tabs/help_and_licensing/" class="md-nav__link">
         
   
   
@@ -647,29 +662,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -682,7 +692,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Concepts
@@ -693,30 +703,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    RAG
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../concepts/rag/" class="md-nav__link">
         
   
   
@@ -727,84 +717,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#retrieval-augmented-generation-rag" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieval Augmented Generation (RAG)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-rag-pipeline-how-archivist-works-behind-the-scenes" class="md-nav__link">
-    <span class="md-ellipsis">
-      The RAG Pipeline: How Archivist Works Behind the Scenes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The RAG Pipeline: How Archivist Works Behind the Scenes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#document-ingestion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Document Ingestion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#text-embedding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Text Embedding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vector-storage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vector Storage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retrieval-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieval Process
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -817,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../usecases/" class="md-nav__link">
+      <a href="../concepts/usecases/" class="md-nav__link">
         
   
   
@@ -840,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filesets/" class="md-nav__link">
+      <a href="../concepts/filesets/" class="md-nav__link">
         
   
   
@@ -863,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../privacy/" class="md-nav__link">
+      <a href="../concepts/privacy/" class="md-nav__link">
         
   
   
@@ -886,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../portability/" class="md-nav__link">
+      <a href="../concepts/portability/" class="md-nav__link">
         
   
   
@@ -957,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/integralbi/" class="md-nav__link">
+      <a href="../about/integralbi/" class="md-nav__link">
         
   
   
@@ -980,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/demo/" class="md-nav__link">
+      <a href="../about/demo/" class="md-nav__link">
         
   
   
@@ -1003,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/attributions/" class="md-nav__link">
+      <a href="../about/attributions/" class="md-nav__link">
         
   
   
@@ -1043,74 +955,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#retrieval-augmented-generation-rag" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieval Augmented Generation (RAG)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-rag-pipeline-how-archivist-works-behind-the-scenes" class="md-nav__link">
-    <span class="md-ellipsis">
-      The RAG Pipeline: How Archivist Works Behind the Scenes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The RAG Pipeline: How Archivist Works Behind the Scenes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#document-ingestion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Document Ingestion
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#text-embedding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Text Embedding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vector-storage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vector Storage
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retrieval-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieval Process
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1126,42 +972,15 @@
 
 
 
-  <h1>RAG</h1>
-
-<h2 id="retrieval-augmented-generation-rag">Retrieval Augmented Generation (RAG)</h2>
-<p>RAG is like giving an AI assistant access to your personal library of information. Imagine you're asking a smart friend a question—normally, they can only answer based on what they already know. But with RAG, it's as if your friend can quickly search through your documents, find the most relevant information, and use that specific knowledge to give you a better answer. When you use Archivist, the system takes your question, searches through your uploaded files for the most relevant content, and then uses that information to create its response. This means you get answers that are specifically informed by your own documents—whether that's company reports, research papers, or personal notes—rather than just generic information. It's like having an intelligent assistant who has actually read all your important materials and can reference them directly when answering your questions.</p>
-<h2 id="the-rag-pipeline-how-archivist-works-behind-the-scenes">The RAG Pipeline: How Archivist Works Behind the Scenes</h2>
-<p>Retrieval Augmented Generation in Archivist follows a structured pipeline that transforms your documents into AI-accessible knowledge. While the interface keeps things simple, here's a glimpse at what happens under the hood:</p>
-<h3 id="document-ingestion">Document Ingestion</h3>
-<p>The process begins when you upload files through the Upload Tab. During this phase, Archivist:
-- Accepts your documents in various formats (PDF, DOCX, TXT, etc.)
-- Processes the text content, including extracting text from images when possible
-- Breaks the text into manageable "chunks" using your selected splitting method (fixed size, CSV rows, or custom delimiters)
-- Preserves metadata connections between chunks and their source documents
-- Stores a copy of the original document for reference and verification</p>
-<h3 id="text-embedding">Text Embedding</h3>
-<p>Once your document is chunked, Archivist converts each text segment into a mathematical representation:
-- Each chunk is processed through an embedding model that transforms words into numerical vectors
-- These vectors capture the semantic meaning of the text, not just keywords
-- Similar concepts receive similar vector representations, even if using different terminology
-- This transformation allows the system to understand relationships between ideas
-- The embedding process happens locally on your device, keeping your data private</p>
-<h3 id="vector-storage">Vector Storage</h3>
-<p>After embedding, these mathematical representations are organized in a vector database:
-- Each text chunk's vector is stored alongside the actual text content
-- Metadata tags maintain connections to source documents and file sets
-- The database is optimized for similarity searching, not just keyword matching
-- This structure enables semantic understanding rather than simple text matching
-- The entire database is stored locally on your device, never in the cloud</p>
-<h3 id="retrieval-process">Retrieval Process</h3>
-<p>When you ask a question in the Query Tab, Archivist:
-- Converts your question into the same vector space using the embedding model
-- Searches the vector database for chunks with similar vector representations
-- Retrieves the most semantically relevant text chunks based on similarity scores
-- Filters results according to your file and file set selections
-- Sends these relevant text chunks to the AI model along with your question
-- The AI model uses this context to generate an informed response based specifically on your documents</p>
-<p>This entire pipeline happens privately on your local device, ensuring your sensitive documents never leave your control while still providing powerful AI-enhanced document interaction.</p>
+<h1 id="1-startup-is-slow">1. Startup is slow</h1>
+<p>Archivist is a proof-of-concept application that is built to demonstrate some specific technologies that are better suited for networked deployments within a business. These technologies have been packaged into a single installer to reduce the effort required for a user to experience these technologies. Unfortunately, the combination of technologies for networked deployments and a desktop installer package create some latency and bloat. We may consider a rewrite of Archivist in a more desktop-native language but, for now, this is the tradeoff that we've had to make.</p>
+<h1 id="2-receiving-a-chat-response-is-slow">2. Receiving a chat response is slow</h1>
+<p>Speeds are primarily affected by your hardware. Archivist needs to load the entire language model into RAM before it can process queries. On modern laptops with an SSD, this typically takes 5-15 seconds. Older systems with traditional hard drives may experience startup delays of 30+ seconds. Memory bandwidth and RAM speed (MHz rating) significantly impact model loading and inference - higher frequency DDR4/DDR5 RAM can reduce loading times by 20-30% compared to slower memory. During operation, your CPU handles most of the processing work - multi-core processors with higher clock speeds will generate responses faster than older CPUs. If you experience slow responses, try closing other memory-intensive applications, as Archivist works best when it has dedicated access to your system's resources. The 2B model is optimized for laptop use, balancing quality with performance constraints, but even this smaller model benefits substantially from modern hardware.</p>
+<h1 id="3-voice-to-text-is-slow">3. Voice-to-text is slow</h1>
+<p>The voice-to-text feature in Archivist relies on Whisper (via Hugging Face Transformers and PyTorch) to convert your spoken words into text. This process is computationally intensive and performance varies based on your hardware. Your first voice transcription in each session will be noticeably slower (typically 15-30 seconds) as the application needs to load the speech recognition model into memory. Once loaded, subsequent voice messages process much faster, usually in 5-15 seconds depending on recording length. Performance depends heavily on your CPU's capabilities - newer multi-core processors with higher clock speeds can process audio significantly faster than older or low-power CPUs. RAM quantity and speed also impact performance, as the transcription model requires sufficient memory bandwidth to efficiently process audio data. For optimal results, keep recordings under 30 seconds when possible and ensure your laptop has at least 8GB of RAM. If you experience slow transcription times, try closing other resource-intensive applications to dedicate more processing power to Archivist. While optimized for CPU-only operation on standard laptops, the voice-to-text feature will still perform best on systems with modern processors and faster memory.</p>
+<h1 id="4-pre-processing-is-slow">4. Pre-Processing is slow</h1>
+<h1 id="5-pre-process-batches-of-files">5. Pre-Process Batches of Files</h1>
+<h1 id="6-upload-is-interrupted-due-to-a-problem-with-embedding-model-context-size">6. Upload is interrupted due to a problem with embedding model context size</h1>
 
 
 
@@ -1210,10 +1029,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

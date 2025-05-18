@@ -25,7 +25,7 @@ This flexible approach lets you upload a text file where you've inserted special
 
 # Embedding Process
 
-See [embedding](../../concepts/embedding.md)
+See [embedding](../../concepts/embedding/)
 
 # Metadata
 
