@@ -13,6 +13,9 @@ theme:
     primary: grey
     accent: light green
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
