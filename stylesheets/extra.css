@@ -1,22 +1,22 @@
 /* Main content links */
 .md-content a:not(.md-button):not(.md-footer-social__link) {
-  color: #00897b !important; /* Change to your preferred color */
+  color: #2a5c1e !important; /* Change to your preferred color */
 }
 
 /* Navigation links */
 .md-nav__item .md-nav__link {
-  color: #00897b !important; /* Match the above color */
+  color: #2a5c1e !important; /* Match the above color */
 }
 
 /* Hover state for all links */
 .md-content a:not(.md-button):hover, 
 .md-nav__link:hover {
-  color: #4db6ac !important; /* Lighter version for hover */
+  color: #8fcc00 !important; /* Lighter version for hover */
 }
 
 /* Active/current page */
 .md-nav__link--active,
 .md-nav__item--active > .md-nav__link {
-  color: #00695c !important; /* Darker version */
+  color: #1e4316 !important; /* Darker version */
   font-weight: bold;
 }
