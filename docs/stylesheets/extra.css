@@ -1,15 +1,22 @@
-/* Regular links */
-.md-content a, .md-nav__link {
-  color: #00897b; /* Teal/green */
+/* Main content links */
+.md-content a:not(.md-button):not(.md-footer-social__link) {
+  color: #2a5c1e !important; /* Change to your preferred color */
 }
 
-/* Hover state */
-.md-content a:hover, .md-nav__link:hover {
-  color: #4db6ac; /* Lighter teal */
+/* Navigation links */
+.md-nav__item .md-nav__link {
+  color: #2a5c1e !important; /* Match the above color */
+}
+
+/* Hover state for all links */
+.md-content a:not(.md-button):hover, 
+.md-nav__link:hover {
+  color: #8fcc00 !important; /* Lighter version for hover */
 }
 
 /* Active/current page */
-.md-nav__link--active {
-  color: #00695c !important; /* Darker teal */
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  color: #1e4316 !important; /* Darker version */
   font-weight: bold;
 }

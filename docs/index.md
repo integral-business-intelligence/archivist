@@ -1,5 +1,5 @@
-!!! warning "Work in Progress"
-    🚧 We are still building the documentation prior to an official release 🚧
+!!! warning "The Documentation is a Work in Progress"
+    🚧🚧🚧🚧🚧 We are still writing the documentation prior to an official release 🚧🚧🚧🚧
 
 Archivist is an easy-to-use desktop application that:
 
