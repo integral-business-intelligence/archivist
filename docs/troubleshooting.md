@@ -1,6 +1,6 @@
 # 1. Startup is slow
 
-Archivist is a proof-of-concept application that is built to demonstrate some specific technologies that are better suited for networked deployments within a business. These technologies have been packaged into a single installer to reduce the effort required for a user to experience these technologies. Unfortunately, the combination of technologies for networked deployments and a desktop installer package create some latency and bloat. We may consider a rewrite of Archivist in a more desktop-native language but, for now, this is the tradeoff that we've had to make.
+Archivist is a [proof-of-concept application](https://integralbi.ai/archivist-as-proof-of-concept/) that is built to demonstrate some specific technologies that are better suited for networked deployments within a business. These technologies have been packaged into a single installer to reduce the effort required for a user to experience these technologies. Unfortunately, the combination of technologies for networked deployments and a desktop installer package create some latency and bloat. We may consider a rewrite of Archivist in a more desktop-native language but, for now, this is the tradeoff that we've had to make.
 
 # 2. Receiving a chat response is slow
 
