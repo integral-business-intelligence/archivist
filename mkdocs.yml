@@ -20,22 +20,23 @@ markdown_extensions:
 
 nav:
   - Home: 
-    - Overview: index.md
-    - Licensing: license.md
+      - Overview: index.md
+      - Quick Start: quickstart.md
+      - Licensing: license.md
   - Usage:
-    - Query: tabs/query.md
-    - Pre-Process: tabs/pre-process.md
-    - Upload: tabs/upload.md
-    - Browse: tabs/browse.md
-    - Inspect: tabs/inspect.md
-    - AI Settings: tabs/ai_settings.md
-    - Help and Licensing: tabs/help_and_licensing.md
+      - Query: tabs/query.md
+      - Pre-Process: tabs/pre-process.md
+      - Upload: tabs/upload.md
+      - Browse: tabs/browse.md
+      - Inspect: tabs/inspect.md
+      - AI Settings: tabs/ai_settings.md
+      - Help and Licensing: tabs/help_and_licensing.md
   - Concepts:
-    - Retrieval Augmented Generation: concepts/rag.md
-    - Use Cases: concepts/usecases.md
-    - File Sets: concepts/filesets.md
-    - Privacy: concepts/privacy.md
-    - Data Portability: concepts/portability.md
+      - RAG: concepts/rag.md
+      - Use Cases: concepts/usecases.md
+      - File Sets: concepts/filesets.md
+      - Privacy: concepts/privacy.md
+      - Data Portability: concepts/portability.md
   - About:
-    - Integral Business Intelligence: about/integralbi.md
-    - Capability Demo: about/demo.md
+      - Integral BI: about/integralbi.md
+      - Demo: about/demo.md
