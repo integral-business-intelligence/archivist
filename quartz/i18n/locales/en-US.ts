@@ -33,7 +33,7 @@ export default {
       title: "Reader mode",
     },
     explorer: {
-      title: "Explorer",
+      title: "Site Directory",
     },
     footer: {
       createdWith: "Created with",
@@ -54,7 +54,7 @@ export default {
       searchBarPlaceholder: "Search for something",
     },
     tableOfContents: {
-      title: "Table of Contents",
+      title: "Page Contents",
     },
     contentMeta: {
       readingTime: ({ minutes }) => `${minutes} min read`,
